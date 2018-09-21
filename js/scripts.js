@@ -1,3 +1,3 @@
 var dob = $("#born").val();
-var flavor = $("input:radio[name=gender]:checked").val();
-    
+var gender = $("input:radio[name=gender]:checked").val();
+var class = $("#class").val()    
