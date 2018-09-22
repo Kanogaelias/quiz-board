@@ -1,23 +1,13 @@
-<<<<<<< HEAD
-h1 {
-    text-align: center;
-    font-weight: bold;
-=======
 p {
    font-weight: bold;
 }
 h1 {
     text-align: center;
->>>>>>> 3036fa4e6496d5b7e5411192a6a2e4fa9cfddaef
 }
 
 h2 {
     text-decoration: underline;
 }
-<<<<<<< HEAD
-p {
-    font-weight: bold;
-=======
 
 #blanks {
     text-align: center;
@@ -44,5 +34,4 @@ p {
     float: left;
     padding: 15px;
   }
->>>>>>> 3036fa4e6496d5b7e5411192a6a2e4fa9cfddaef
 }
