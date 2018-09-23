@@ -1,3 +1,53 @@
 var dob = $("#born").val();
 var gender = $("input:radio[name=gender]:checked").val();
 var class = $("#class").val()    
+
+//Function to count correct answers and print results to document 
+function myFunction() {
+
+    //Create variable to count correct answers 
+    var correctAnswers = 0;
+
+    //Create variables for each question's input value
+        //Create variables for each question's input value
+        var q1 = document.getElementById("q1b").checked;
+        var q2 = document.getElementById("q2a").checked;
+        var q3 = document.getElementById("q3b").checked;
+        var q4 = document.getElementById("q4c").checked;
+        var q5 = document.getElementById("q5b").checked;
+        var q6 = document.getElementById("q6a").checked;
+        var q7 = document.getElementById("q7a").checked;
+        var q8 = document.getElementById("q8b").checked;
+
+        //Assign correct answers to field inputs
+      if (q1) {
+        correctAnswers += 1;
+    } if (q2) {
+        correctAnswers += 1;
+    } if (q3) {
+        correctAnswers += 1;
+    } if (q4) {
+        correctAnswers += 1;
+    } if (q5) {
+        correctAnswers += 1;
+    } if (q6) {
+        correctAnswers += 1;
+    } if (q7) {
+        correctAnswers += 1;
+    } if (q8) {
+        correctAnswers += 1;
+    }
+
+    //Print results (and statement) to document, dependant on outcome
+    if (correctAnswers === 8) {
+        document.getElementById("result").innerHTML = "Congratulations! You got all 8 answers correct";}
+    else if (correctAnswers >= 6) {
+        document.getElementById("result").innerHTML = "Congratulations! You got " + correctAnswers + " answers correct";}
+    else if (correctAnswers >= 4) {
+        document.getElementById("result").innerHTML = "You got " + correctAnswers + " answers correct";}
+    else if (correctAnswers >= 2) {
+        document.getElementById("result").innerHTML = "Too Bad! You only got " + correctAnswers + " answers correct";}
+    else if (correctAnswers === 1) {
+        document.getElementById("result").innerHTML = "Too Bad! You only got 1 answer correct";}
+    else if (correctAnswers === 0) {
+        document.getElementById("result").innerHTML = "You didn't answer a single answer correctly!";}

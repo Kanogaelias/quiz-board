@@ -10,8 +10,8 @@
    <body>
       <div class="container">
          <div id="blanks">
-         <h1>TECH-GURU COMPUTER CLUB</h1>
-         <h2>Please Fill in your details below (Total Marks=35)</h2>
+           <h1>TECH-GURU COMPUTER CLUB</h1>
+           <h2>Please Fill in your details below (Total Marks=40)</h2>
             <form>
                <div class="form-group">
                   <label for="person1">Name</label><br>
@@ -21,7 +21,7 @@
                <div class="form-group">
                 <label for="born">Date of birth:</label><br>
                 <input id="born" class="form-control" type="date">
-              </div><br>
+               </div><br>
           
               <div class="select">
                 <label for="born">Class</label><br>
@@ -38,86 +38,88 @@
                 <form>
                   <input type="radio" name="gender" value="male" checked> male<br>
                   <input type="radio" name="gender" value="female"> female
-                </div><br>
+              </div><br>
               </form>
               <button type="submit" class="btn">Enter</button>
          </div><br><br>
              
             <h2>Select appropriate answers to the following questions</h2>
-
+            <div id="quiz">
               <div class="radio">
                 <p>1. How can you define Bootsrap?</p>
                 <form>
-                  <input type="radio" name="bootstrap" value="question" checked> It is a premium front-end framework for faster and easier web development.<br>
-                  <input type="radio" name="bootstrap" value="question" checked> It is a free front-end framework for faster and easier web development.<br>
-                  <input type="radio" name="bootstrap" value="question" checked> It is a premium front-end framework for slow and complex web development.
+                  <input type="radio" name="q1" value="incorrect" id="q1a" checked> a: It is a premium front-end framework for faster and easier web development.<br>
+                  <input type="radio" name="q1" value="correct" id="q1b" checked> b: is a free front-end framework for faster and easier web development.<br>
+                  <input type="radio" name="q1" value="incorrect" id="q1c" checked> c: It is a premium front-end framework for slow and complex web development.
                 </form>
                </div><br>
 
                <div class="radio">
                     <p>2. Is Bootstrap compatible with all modern browsers?</p>
                     <form>
-                      <input type="radio" name="bootstrap" value="question" checked> True<br>
-                      <input type="radio" name="bootstrap" value="question" checked> False
+                      <input type="radio" name="q2" value="correct" id="q2a" checked> a: True<br>
+                      <input type="radio" name="q2" value="incorrect" id="q2b" checked> b: False
                     </form>
                </div><br>
 
                <div class="radio">
                     <p>3. Where do you link JavaScript?</p>
                     <form>
-                      <input type="radio" name="javascript" value="question" checked> Before bootstrap and css styles<br>
-                      <input type="radio" name="javascript" value="question" checked> after bootsrap and css styles<br>                  </div>
-                      <input type="radio" name="javascript" value="question" checked> between jquery and css styles
+                      <input type="radio" name="q3" value="incorrect" id="q3a" checked> a: Before bootstrap and css styles<br>
+                      <input type="radio" name="q3" value="correct" id="q3b" checked> b: after bootsrap and css styles<br>                  
+                      <input type="radio" name="q3" value="incorrect" id="q3c" checked> c: between jquery and css styles
                     </form>
                </div><br>
 
                <div class="radio">
                     <p>4. Which of the following is not a data type</p>
                     <form>
-                      <input type="radio" name="javascript" value="question" checked> number<br>
-                      <input type="radio" name="javascript" value="question" checked> boolean<br>                  
-                      <input type="radio" name="javascript" value="question" checked> array<br>
-                      <input type="radio" name="javascript" value="question" checked> string
+                      <input type="radio" name="q4" value="incorrect" id="q4a" checked> a: number<br>
+                      <input type="radio" name="q4" value="incorrect" id="q4b" checked> b: boolean<br>                  
+                      <input type="radio" name="q4" value="correct" id="q4c" checked> c: array<br>
+                      <input type="radio" name="q4" value="incorrect" id="q4d" checked> d: string
                     </form>
                </div><br>
 
                <div class="radio">
                     <p>5.  Is it possible to break JavaScript Code into several lines?</p>
                     <form>
-                      <input type="radio" name="javascript" value="question" checked> NO<br>                  
-                      <input type="radio" name="javascript" value="question" checked> YES
+                      <input type="radio" name="q5" value="incorrect" id="q5a" checked> a: NO<br>                  
+                      <input type="radio" name="q5" value="correct" id="q5b" checked> b: YES
                     </form>
                </div><br>
                
                <div class="radio">
-                 <p>5.  Which symbol is used for comments in Javascript?</p>
+                 <p>6.  Which symbol is used for comments in Javascript?</p>
                  <form>
-                   <input type="radio" name="javascript" value="question" checked> //<br>                  
-                   <input type="radio" name="javascript" value="question" checked> &&<br>
-                   <input type="radio" name="javascript" value="question" checked> ||
+                   <input type="radio" name="q6" value="correct" id="q6a" checked> a: //<br>                  
+                   <input type="radio" name="q6" value="incorrect" id="q6b" checked> b: &&<br>
+                   <input type="radio" name="q6" value="incorrect" id="q6c" checked> c: ||
                  </form>
                </div><br>
 
                <div class="radio">
-                    <p>6. The following are ways of involving a JavaScript code into HTML. Which one is not?</p>
+                    <p>7. The following are ways of involving a JavaScript code into HTML. Which one is not?</p>
                     <form>
-                      <input type="radio" name="javascript" value="question" checked> //<br>                  
-                      <input type="radio" name="javascript" value="question" checked> &&<br>
-                      <input type="radio" name="javascript" value="question" checked> ||
+                      <input type="radio" name="q7" value="correct" id="q7a" checked> a: //<br>                  
+                      <input type="radio" name="q7" value="incorrect" id="q7b" checked> b: &&<br>
+                      <input type="radio" name="q7" value="incorrect" id="q7c" checked> c: ||
                     </form>
                </div><br>
 
               <div class="radio">
-                        <p>7. Explain how can you submit a form using JavaScript.</p>
+                        <p>8. Explain how you can submit a form using JavaScript.</p>
                         <form>
-                          <input type="radio" name="javascript" value="question" checked> parseInt document<br>                  
-                          <input type="radio" name="javascript" value="question" checked> var document = [""];<br>
-                          <input type="radio" name="javascript" value="question" checked> document.form[0].submit();
+                          <input type="radio" name="q8" value="incorrect" id="q8a" checked> a: parseInt document<br>                  
+                          <input type="radio" name="q8" value="correct" id="q8b" checked> b: var document = [""];<br>
+                          <input type="radio" name="q8" value="incorrect" id="q8c" checked> c: document.form[0].submit();
                         </form>
-               </div><br>
-               <button type="submit" class="btn">submit</button>
-                    
-            </form> 
+              </div><br>
+              <button type="button" onclick="myFunction()">Submit</button>
+               <p id="result"></p>
+
+              
+            </div>
       </div>
    </body>
 </html>
