@@ -5,37 +5,46 @@ function myFunction() {
 
     //Create variable to count correct answers 
     var correctAnswers = 0;
-
+    var answers = 0;
     //Create variables for each question's input value
     //Create variables for each question's input value
-    var q1 = document.getElementById("q1b").value;
-    var q2 = document.getElementById("q2a").value;
-    var q3 = document.getElementById("q3b").value;
-    var q4 = document.getElementById("q4c").value;
-    var q5 = document.getElementById("q5b").value;
-    var q6 = document.getElementById("q6a").value;
-    var q7 = document.getElementById("q7a").value;
-    var q8 = document.getElementById("q8b").value;
+    var quizOne = document.getElementsByName("q1").value;
+    var quizTwo = document.getElementsByName("q2").value;
+    var quizThree = document.getElementsByName("q3").value;
+    var quizFour = document.getElementsByName("q4").value;
+    var quizFive = document.getElementsByName("q5").value;
+    var quizSix = document.getElementsByName("q6").value;
+    var quizSeven = document.getElementsByName("q7").value;
+    var quizEight = document.getElementsByName("q8").value;
+
+    if (quizOne == "correct") {
+        answers = correctAnswers + 12.5;
+    }
+    if (quizTwo == "correct") {
+        answers = answers + 12.5;
+    }
+    if (quizThree == "correct") {
+        answers = answers + 12.5;
+    }
+    if (quizFour == "correct") {
+        answers = answers + 12.5;
+    }
+    if (quizFive == "correct") {
+        answers = answers + 12.5;
+    }
+    if (quizSix == "correct") {
+        answers = answers + 12.5;
+    }
+    if (quizSeven == "correct") {
+        answers = answers + 12.5;
+    }
+    if (quizEight == "correct") {
+        answers = answers + 12.5;
+    }
 
 
-    //Assign correct answers to field inputs
-    if (q1 == "correct") {
-        correctAnswers = correctAnswers + 12.5;
-    } if (q2 == "correct") {
-        correctAnswers = correctAnswers + 12.5;
-    } if (q3 == "correct") {
-        correctAnswers = correctAnswers + 12.5;
-    } if (q4 == "correct") {
-        correctAnswers = correctAnswers + 12.5;
-    } if (q5 == "correct") {
-        correctAnswers = correctAnswers + 12.5;
-    } if (q6 == "correct") {
-        correctAnswers = correctAnswers + 12.5;
-    } if (q7 == "correct") {
-        correctAnswers = correctAnswers + 12.5;
-    } if (q8 == "correct") {
-        correctAnswers = correctAnswers + 12.5;
-    };
 
-    document.getElementById("fifth-p").style.visibility = "visible";
-    document.getElementById("correctNumber").innerHTML = "correctNumber" + "correctAnswers";
+
+    document.getElementById("message").innerHTML = "Score is " + answers + "%";
+    document.getElementById("result").style.visibility = "visible";
+}
