@@ -4,26 +4,26 @@
 function myFunction() {
 
     //Create variable to count correct answers 
-   // var correctAnswers = 0;
+    // var correctAnswers = 0;
     var answers = 0;
     //Create variables for each question's input value
     //Create variables for each question's input value
-    var quizOne = $("input:radio[name=q1]:checked").val();
-    var quizTwo = $("input:radio[name=q2]:checked").val();
-    var quizThree = $("input:radio[name=q3]:checked").val();
-    var quizFour = $("input:radio[name=q4]:checked").val();
-    var quizFive = $("input:radio[name=q5]:checked").val();
-    var quizSix = $("input:radio[name=q6]:checked").val();
-    var quizSeven = $("input:radio[name=q7]:checked").val();
-    var quizEight = $("input:radio[name=q8]:checked").val();
+    var quizOne = $("input:radio[name=question1]:checked").val();
+    var quizTwo = $("input:radio[name=question2]:checked").val();
+    var quizThree = $("input:radio[name=question3]:checked").val();
+    var quizFour = $("input:radio[name=question4]:checked").val();
+    var quizFive = $("input:radio[name=question5]:checked").val();
+    var quizSix = $("input:radio[name=question6]:checked").val();
+    var quizSeven = $("input:radio[name=question7]:checked").val();
+    var quizEight = $("input:radio[name=question8]:checked").val();
 
 
- 
- 
- 
+
+
+
 
     if (quizOne == "correct") {
-        answers = answers+ 12.5;
+        answers = answers + 12.5;
     }
     if (quizTwo == "correct") {
         answers = answers + 12.5;
